@@ -85,7 +85,7 @@ namespace AspectSwitch
                 if (args.Length > 0 && args[0] == "--worker")
                 {
                     if (args.Length != 5) throw new Exception("Invalid worker arguments");
-                    // Share the DDC lock with the original app to serialize hardware access.
+                    // Serialize DDC access across compatible clients.
                     using (Mutex bus = new Mutex(false, @"Local\AGPAspectSwitch.DDC.v1"))
                     {
                         bool locked = false;
