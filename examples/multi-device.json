@@ -1,0 +1,65 @@
+{
+  "SchemaVersion": 3,
+  "MonitorName": "AOC AGP346UCSD",
+  "MonitorId": "",
+  "AvailableInputs": [
+    {
+      "Value": 15,
+      "Label": "DisplayPort"
+    },
+    {
+      "Value": 17,
+      "Label": "HDMI 1"
+    },
+    {
+      "Value": 18,
+      "Label": "HDMI 2"
+    },
+    {
+      "Value": 21,
+      "Label": "USB-C"
+    }
+  ],
+  "AspectModes": [
+    {
+      "Value": 39,
+      "Label": "전체 화면 (21:9)"
+    },
+    {
+      "Value": 35,
+      "Label": "원본 화면 비율"
+    },
+    {
+      "Value": 40,
+      "Label": "1:1 (21:9)"
+    }
+  ],
+  "Devices": [
+    {
+      "Name": "PC",
+      "Input": 15,
+      "Aspect": 39,
+      "Enabled": true
+    },
+    {
+      "Name": "Nintendo Switch",
+      "Input": 18,
+      "Aspect": 35,
+      "Enabled": true
+    },
+    {
+      "Name": "PlayStation 5",
+      "Input": 17,
+      "Aspect": 35,
+      "Enabled": true
+    },
+    {
+      "Name": "노트북",
+      "Input": 21,
+      "Aspect": 39,
+      "Enabled": true
+    }
+  ],
+  "PollMilliseconds": 2000,
+  "AutoEnabled": true
+}
